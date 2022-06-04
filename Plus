@@ -47,25 +47,46 @@ clear; exit 1
 }
 }}
 otimize_python() {
-    # INSTALA PYTHON AO PYTHON2
+echo
 apt-get install python -y >/dev/null
+echo
+clear
 apt-get install python2 -y >/dev/null
-    # INSTALA PYTHON3.6 AO PYTHON3.9
+echo
+clear
 apt-get install python3.6 -y >/dev/null
+echo
+clear
 apt-get install python3.7 -y >/dev/null
+echo
+clear
 apt-get install python3.8 -y >/dev/null
+echo
+clear
 apt-get install python3.9 -y >/dev/null
-    # CRIA ALTERNATIVAS PYTHON
+echo
+clear
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1 >/dev/null
+echo
+clear
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 3 >/dev/null
+echo
+clear
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2 >/dev/null
+echo
+clear
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 4 >/dev/null
-    # INSTALA PIP
+echo
+clear
 apt install pip -y
+echo
+clear
 apt install python3-pip -y
-    # INSTALA SOCAT
+echo
+clear
 apt install socat -y
-    #SETAR PYTHON3
+echo
+clear
 update-alternatives --set python3 /usr/bin/python3.6
 }
 }

@@ -45,29 +45,7 @@ rm -rf $HOME/Plus > /dev/null 2>&1
 sleep 2
 clear; exit 1
 }
-}
-apt-get install curl -y &>/dev/null
-echo "AGUARDE 1"
-clear
-apt install pv &>/dev/null
-echo "AGUARDE 2"
-clear
-apt-get install lolcat -y &>/dev/null
-echo "AGUARDE 3"
-clear
-apt-get install figlet -y &>/dev/null
-echo "AGUARDE 4"
-clear
-apt-get install curl -y &>/dev/null
-echo "AGUARDE 5"
-clear
-apt install git -y &>/dev/null 
-apt install figlet boxes -y &>/dev/null 
-system=$(cat /etc/issue.net)
-date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo ""
-}
-}
+}}
 otimize_python() {
     # INSTALA PYTHON AO PYTHON2
 apt-get install python -y >/dev/null
@@ -89,6 +67,28 @@ apt install python3-pip -y
 apt install socat -y
     #SETAR PYTHON3
 update-alternatives --set python3 /usr/bin/python3.6
+}
+}
+apt-get install curl -y &>/dev/null
+echo "AGUARDE 1"
+clear
+apt install pv &>/dev/null
+echo "AGUARDE 2"
+clear
+apt-get install lolcat -y &>/dev/null
+echo "AGUARDE 3"
+clear
+apt-get install figlet -y &>/dev/null
+echo "AGUARDE 4"
+clear
+apt-get install curl -y &>/dev/null
+echo "AGUARDE 5"
+clear
+apt install git -y &>/dev/null 
+apt install figlet boxes -y &>/dev/null 
+system=$(cat /etc/issue.net)
+date=$(date '+%Y-%m-%d <> %H:%M:%S')
+echo ""
 echo -e "\033[1;37m $system                          $date"
 echo -e "\033[01;31m====================================================================\033[0m"
 echo ""

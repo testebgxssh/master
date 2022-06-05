@@ -30,6 +30,13 @@
 "PORTA04":"443",
 "BUGHOST04":"ftp.boom4u.com.br",
 
+"MODO04":"sslpay",
+"NOMESERVIDOR04":"CLARO",
+"SERVIDOR04":"s1.ntinjectorpro.xyz",
+"IPSERVIDOR04":"172.67.201.105",
+"PORTA04":"443",
+"BUGHOST04":"ftp.boom4u.com.br",
+
 "VIVO":"</font><font color=\"#008000\">ON</font>",
 "TIM":"</font><font color=\"#008000\">ON</font>",
 "CLARO":"</font><font color=\"#008000\">ON</font>",

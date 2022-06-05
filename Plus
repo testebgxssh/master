@@ -80,25 +80,11 @@ otimize_python() {
     #SETAR PYTHON3
     update-alternatives --set python3 /usr/bin/python3.6
 }
-system=$(cat /etc/issue.net)
-date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-echo -e "\033[01;31m====================================================================\033[0m"
+echo -e "\033[1;31m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                 ┃                  SCRIPT OFICIAL                  ┃                 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛                                                                                         ▒█▀▀▀█ ▒█▀▀▀█ ▒█░▒█ ▒█▀▀█ ▒█░░░ ▒█░▒█ ▒█▀▀▀█                         ░▀▀▀▄▄ ░▀▀▀▄▄ ▒█▀▀█ ▒█▄▄█ ▒█░░░ ▒█░▒█ ░▀▀▀▄▄                         ▒█▄▄▄█ ▒█▄▄▄█ ▒█░▒█ ▒█░░░ ▒█▄▄█ ░▀▄▄▀ ▒█▄▄▄█                                                                                              ============ Noob: @ALFAINTERNET ===========\033[0m"
 echo ""
-echo ""
-echo -e "                       \033[05;31mSISTEMAS \033[05;33mOPERACIONAIS\033[0m"
-echo ""
-echo -e "\033[1;31m• \033[1;33mUBUNTU 18 x64\033[0m 🐧"
-echo -e "\033[1;31m• \033[1;33mUBUNTU 20 x64\033[0m 🐧"
-echo -e "\033[1;31m• \033[1;33mDEBIAN  9 x64\033[0m 🐧"
-echo -e "\033[1;31m• \033[1;33mDEBIAN 10 x64\033[0m 🐧"
-echo -e "\033[1;31m• \033[1;33mDEBIAN 11 x64\033[0m 🐧"
-echo -e "\033[1;31m \033[1;33m\033[0m"
-echo -e "\033[1;31m• \033[1;33mUSE UBUNTU 18 x64 PARA UMA MELHOR EXPERIÊNCIA\033[0m"
-echo -e "\033[1;31m• \033[1;33mUSE UBUNTU 18 x64 PARA (V2RAY) EVITEM OUTROS SISTEMAS\033[0m"
-echo -e "\033[1;31m \033[1;33m\033[0m"
-echo -e "\033[01;31m====================================================================\033[0m"
-echo -ne "\033[1;36mDIGITE ENTER PRA CONTINUAR (n) SAIR:\033[1;37m"; read x
+#-----------------------------------------------------------------------------------------------------------------
+echo -ne "\033[1;36mGENERAR AS KEY FREE [N/S]: \033[1;37m"
+read x
 [[ $x = @(n|N) ]] && exit
 echo -e "\033[1;36mSelecione a Arquitetura da sua VPS: \033[1;37m"
 echo -e "[1] - x86_64"
@@ -130,28 +116,22 @@ if [[ "$resposta" = '1' ]]; then
     chmod 777 ShellBot.sh >/dev/null 2>&1
     cd >/dev/null 2>&1
     #-----------------------------------------------------------------------------------------------------------------
-    echo -e "\n\033[1;32mOK ✔️\033[1;32m"
-sleep 1s
+    echo -e "\n\033[1;32mKEY VALIDA!\033[1;32m"
+    sleep 1s
     echo ""
     [[ -f "$HOME/usuarios.db" ]] && {
         clear
-        system=$(cat /etc/issue.net)
-date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mOPA DETECTAMOS..."
-echo -e "\033[01;31m===================================================================="
-echo -e "\033[1;33mDADOS DE USUÁRIOS ENCONTRADO!"
-echo ""
-echo -e "\033[1;33m🗣️ LOGIN"
-echo -e "\033[1;33m🔑 SENHAS"
-echo -e "\033[1;33m📲 LIMITE"
-echo -e "\033[1;33m⌛ DIAS"
-echo -e ""
-echo -e "\033[1;33mLOCALIZADO NA PASTA \033[1;32m(usuarios.db)"
-echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mMANTER DADOS ATUAL\033[0m"
-echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCRIAR UMA NOVA BASE DE DADOS\033[0m"
-echo -e "\033[01;31m====================================================================\033[0m"
+        echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+        echo ""
+        echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
+        echo ""
+        echo -e "\033[1;33mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;33mFoi"
+        echo -e "Encontrada! Deseja mantê-la preservando o limite"
+        echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
+        echo -e "criar uma nova base de dados ?\033[0m"
+        echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mManter Base de Dados Atual\033[0m"
+        echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCriar uma Nova Base de Dados\033[0m"
+        echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
         echo ""
         tput setaf 2
         tput bold
@@ -169,13 +149,9 @@ echo -e "\033[01;31m============================================================
     tput sgr0
     echo ""
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mATUALIZANDO SISTEMA 
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mATUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
     echo ""
     fun_attlist() {
         apt-get update -y
@@ -185,13 +161,9 @@ echo -e "\033[01;31m============================================================
     fun_bar 'fun_attlist'
     clear
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mINSTALANDO PACOTES 
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PACOTES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS ! 
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "\033[1;33mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS !\033[0m"
     echo ""
     inst_pct() {
         _pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip" "python" "at")
@@ -208,40 +180,26 @@ echo -e "\033[01;31m============================================================
     ufw allow 8080/tcp
     clear
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mFINALIZANDO  
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "              \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mFINALIZANDO \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mOTIMIZANDO PYTHON  
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "      \033[1;33mOTIMIZANDO PYTHON \033[0m"
     echo ""
     fun_bar 'otimize_python'
     clear
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mFINALIZANDO   
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "              \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mFINALIZANDO \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mCONCLUINDO FUNÇÕES E DEFINIÇÕES!    
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "      \033[1;33mCONCLUINDO FUNÇÕES E DEFINIÇÕES! \033[0m"
     echo ""
     fun_bar "$_Ink/list $_lnk $_Ink $_1nk $key"
     clear
     echo ""
     cd $HOME
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mINSTALACAO CONCLUIDA    
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
     echo ""
-    echo "TUDO PRONTO. BORA COMEÇAR !"  | pv -qL 8
-system=$(cat /etc/issue.net)
-date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-echo -e "\033[1;31m \033[1;33mPARA INICIAR DIGITE: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@ALFAINTERNET\033[0m"
-rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
+    echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
+    echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@ALFAINTERNET\033[0m"
+    rm $HOME/Plus && cat /dev/null >~/.bash_history && history -c
 elif [[ "$resposta" = '2' ]]; then
     sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config >/dev/null 2>&1
     service ssh restart >/dev/null 2>&1
@@ -266,28 +224,22 @@ elif [[ "$resposta" = '2' ]]; then
     chmod 777 ShellBot.sh >/dev/null 2>&1
     cd >/dev/null 2>&1
     #-----------------------------------------------------------------------------------------------------------------
-    echo -e "\n\033[1;32mOK ✔️\033[1;32m"
-sleep 1s
+    echo -e "\n\033[1;32mKEY VALIDA!\033[1;32m"
+    sleep 1s
     echo ""
     [[ -f "$HOME/usuarios.db" ]] && {
         clear
-        system=$(cat /etc/issue.net)
-date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mOPA DETECTAMOS..."
-echo -e "\033[01;31m===================================================================="
-echo -e "\033[1;33mDADOS DE USUÁRIOS ENCONTRADO!"
-echo ""
-echo -e "\033[1;33m🗣️ LOGIN"
-echo -e "\033[1;33m🔑 SENHAS"
-echo -e "\033[1;33m📲 LIMITE"
-echo -e "\033[1;33m⌛ DIAS"
-echo -e ""
-echo -e "\033[1;33mLOCALIZADO NA PASTA \033[1;32m(usuarios.db)"
-echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mMANTER DADOS ATUAL\033[0m"
-echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCRIAR UMA NOVA BASE DE DADOS\033[0m"
-echo -e "\033[01;31m====================================================================\033[0m"
+        echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+        echo ""
+        echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
+        echo ""
+        echo -e "\033[1;33mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;33mFoi"
+        echo -e "Encontrada! Deseja mantê-la preservando o limite"
+        echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
+        echo -e "criar uma nova base de dados ?\033[0m"
+        echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mManter Base de Dados Atual\033[0m"
+        echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCriar uma Nova Base de Dados\033[0m"
+        echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
         echo ""
         tput setaf 2
         tput bold
@@ -305,13 +257,9 @@ echo -e "\033[01;31m============================================================
     tput sgr0
     echo ""
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mATUALIZANDO SISTEMA 
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mATUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
     echo ""
     fun_attlist() {
         apt-get update -y
@@ -321,13 +269,9 @@ echo -e "\033[01;31m============================================================
     fun_bar 'fun_attlist'
     clear
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mINSTALANDO PACOTES 
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PACOTES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS ! 
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "\033[1;33mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS !\033[0m"
     echo ""
     inst_pct() {
         _pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip" "python" "at")
@@ -344,40 +288,26 @@ echo -e "\033[01;31m============================================================
     ufw allow 8080/tcp
     clear
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mFINALIZANDO   
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "              \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mFINALIZANDO \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mOTIMIZANDO PYTHON  
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "      \033[1;33mOTIMIZANDO PYTHON \033[0m"
     echo ""
     fun_bar 'otimize_python'
     clear
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mFINALIZANDO  
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "              \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mFINALIZANDO \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
     echo ""
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mCONCLUINDO FUNÇÕES E DEFINIÇÕES!    
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "      \033[1;33mCONCLUINDO FUNÇÕES E DEFINIÇÕES! \033[0m"
     echo ""
     fun_bar "$_Ink/listARM $_lnk $_Ink $_1nk $key"
     clear
     echo ""
     cd $HOME
-    echo -e "\033[01;31m====================================================================\033[0m"
-echo -e "\033[1;33mINSTALACAO CONCLUIDA    
-echo -e "\033[01;31m====================================================================\033[0m"
+    echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
     echo ""
-    echo "TUDO PRONTO. BORA COMEÇAR !"  | pv -qL 8
-system=$(cat /etc/issue.net)
-date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-echo -e "\033[1;31m \033[1;33mPARA INICIAR DIGITE: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@ALFAINTERNET\033[0m"
-rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
+    echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
+    echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@ALFAINTERNET\033[0m"
+    rm $HOME/Plus && cat /dev/null >~/.bash_history && history -c
 
 else
 

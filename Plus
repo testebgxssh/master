@@ -67,7 +67,7 @@ system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo ""
 echo -e "\033[1;37m $system                          $date"
-figlet 'ANUBIS ☥' | boxes -d stone -p a0v0 | lolcat
+figlet ' ALFAINTERNET' | boxes -d stone -p a0v0 | lolcat
 echo "SE VAI MAIS LONGE DO QUE OUTROS, SÓ JOGAR NOS GRUPOS 👍" 
 echo -e "\033[01;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
 echo ""
@@ -112,7 +112,7 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-figlet "ANUBIS ☥" | lolcat
+figlet "ALFAINTERNET" | lolcat
 echo "SE VAI MAIS LONGE DO QUE OUTROS, SÓ JOGAR NOS GRUPOS 👍" 
 echo -e "\n\033[0;34m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
 echo -e "\033[1;33mOPA DETECTAMOS..."
@@ -138,7 +138,7 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-figlet "ANUBIS ☥" | lolcat
+figlet "    ALFAINTERNET" | lolcat
 echo -e "\033[01;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━╮\033[0m"
 echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                      ATUALIZAÇÃO DE PACOTES NECESSÁRIOS                     \033[1;33m \033[0m\033[01;31m║"
 echo -e "\033[01;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━╯\033[0m"
@@ -151,7 +151,7 @@ echo ""
 fun_attlist () {
 apt-get update -y
 apt-get install net-tools -y
-echo "ANUBIS ☥" > /root/name
+echo "ALFAINTERNET ☥" > /root/name
 echo "V2RAY PRO" >/etc/SSHPlus/RegV2ray
 echo "0" > /root/valor
 echo "USO INDEVIDO [ON]" > /root/banido
@@ -264,7 +264,7 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-figlet "ANUBIS ☥" | lolcat
+figlet "    ALFAINTERNET" | lolcat
 echo -e "\033[01;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━╮\033[0m"
 echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                      ATUALIZAÇÃO DE PACOTES NECESSÁRIOS                     \033[1;33m \033[0m\033[01;31m║"
 echo -e "\033[01;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━╯\033[0m"
@@ -283,7 +283,7 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-figlet "ANUBIS ☥" | lolcat
+figlet "    ALFAINTERNET" | lolcat
 echo -e "\033[01;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━╮\033[0m"
 echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                     FINALIZANDO INSTALAÇÕES NECESSÁRIAS                    \033[1;33m \033[0m\033[01;31m║"
 echo -e "\033[01;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━╯\033[0m"
@@ -295,14 +295,14 @@ echo -e 'by: @KIRITO_SSH' >/etc/rec/licence
 cd $HOME
   echo "clear" >>/root/.bashrc
   echo 'killall menu > /dev/null 2>&1' >>/root/.bashrc
-  sed '/ANUBIS ☥/ d' /root/.bashrc >/root/.bashrc.cp
+  sed '/ALFAINTERNET/ d' /root/.bashrc >/root/.bashrc.cp
   sed '/echo/ d' /root/.bashrc.cp >/root/.bashrc
   sed '/ejecutar/ d' /root/.bashrc >/root/.bashrc.cp
   sed '/date/ d' /root/.bashrc.cp >/root/.bashrc
   rm -f /root/.bashrc.cp
   echo 'DATE=$(date +"%d-%m-%y")' >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
-  echo 'figlet -k ANUBIS ☥ | lolcat' >>/root/.bashrc
+  echo 'figlet -k ALFAINTERNET | lolcat' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
   echo 'bash /bin/ejecutar/echo-ram.sh' >>/root/.bashrc
   echo 'echo -e " DATA DE INSTALAÇÃO : " $(cat < /bin/ejecutar/fecha)' >>/root/.bashrc
@@ -320,11 +320,26 @@ echo "DIGITE SEU NICK EXEMPLO (QUALQUER NOME)"; read name
 echo "$name" >/root/name
 clear
 
+echo "AGORA VAMOS PARA UM BREVE TUTORIAL... "  | pv -qL 10
+
+echo "PARA QUE POSSAMOS EXPLORAR ALGUNS APP'S E SCRIPT, SEMPRE COMPARTILHEM EM UM DOS GRUPOS OU CANAIS DO TELEGRAM 👍"  | pv -qL 10
+
+echo "EXEMPLO"  | pv -qL 8
+echo "" 
+echo "GRUPOS..."  | pv -qL 8
+sleep 2
+echo -e "\033[1;31m GRUPO 1 🙌\033[5;34;47m @ALFAINTERNET 🙃\033[0m"
+echo "" 
+echo -e "\033[1;31m GRUPO 2 🙌\033[5;34;47m FAMILIA X9 🙃\033[0m"
+echo "" 
+sleep 2
+
+echo "FÁCIL DE ENTENDER NÉ?? "  | pv -qL 6
 echo "LEGAL !! TUDO PRONTO, BORA COMEÇAR"  | pv -qL 8
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-figlet "ANUBIS ☥" | lolcat
+figlet "    ALFAINTERNET" | lolcat
 echo "SE VAI MAIS LONGE DO QUE OUTROS, SÓ JOGAR NOS GRUPOS 👍" 
 echo -e "\033[1;31m \033[1;33mPARA INICIAR DIGITE: \033[1;32mmenu\033[0m"
 echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@ALFAINTERNET\033[0m"

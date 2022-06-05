@@ -88,14 +88,14 @@ echo -ne "\033[1;36mDIGITE ENTER PRA CONTINUAR (n) SAIR:\033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
-echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/testebgxssh/master/main/Install/list > /dev/null 2>&1; verif_key
+echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/testebgxssh/master/main/master/Install/list > /dev/null 2>&1; verif_key
 sleep 3s
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
 wget https://raw.githubusercontent.com/testebgxssh/master/main/Install/versao > /dev/null 2>&1
 rm v2raymanager > /dev/null 2>&1
-wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/v2raymanager > /dev/null 2>&1
-wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/botteste.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/v2raymanager > /dev/null 2>&1
+wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/botteste.sh >/dev/null 2>&1
 chmod 777 v2raymanager > /dev/null 2>&1
 chmod 777 botteste.sh > /dev/null 2>&1
 mkdir $HOME/BOT >/dev/null 2>&1
@@ -187,40 +187,40 @@ cd /bin/ && rm -f botteste*
 cd /bin/ && rm -f inst-botteste*
 cd /bin/ && rm -f zx*
 cd /etc/ && rm -f rc.local
-cd /etc/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/rc.local > /dev/null 2>&1 
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/botssh > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/ShellBot.sh > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/botteste > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/inst-botteste > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/zx > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/multi > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/blocksite > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/websocket.sh > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/multi.sh > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/swapmemory > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/tweaker > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/webmin.sh > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/trafegototal > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/blockuser > /dev/null 2>&1
+cd /etc/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/rc.local > /dev/null 2>&1 
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/botssh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/ShellBot.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/botteste > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/inst-botteste > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/zx > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/multi > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/blocksite > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/websocket.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/multi.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/swapmemory > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/tweaker > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/webmin.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/trafegototal > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/blockuser > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Sistema/script/botpro > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/badpro1 > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/painelv2ray > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/badpro > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/initbot > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/ddos > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/fr > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/badpro1 > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/mtuning > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/haveged > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/rps_cpu > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/tuning > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/apache2menu > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/vnc_inst > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/.criar > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/.uid > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/.rmuid > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/.rmuser > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/initcheck > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/painelv2ray > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/badpro > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/initbot > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/ddos > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/fr > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/mtuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/haveged > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/rps_cpu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/tuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/apache2menu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/vnc_inst > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/.uid > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/.rmuid > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/initcheck > /dev/null 2>&1
 cd /etc/ && chmod +x rc.local
 cd /bin/ && chmod +x botssh
 cd /bin/ && chmod +x ShellBot.sh
@@ -253,7 +253,7 @@ cd /bin/ && chmod +x .painelv2ray
 cd /bin/ && chmod +x initbot
 cd /bin/ && chmod +x ddos
 cd /bin/ && rm -f slowdns*
-cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/Modulos/slowdns > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/testebgxssh/master/main/master/Modulos/slowdns > /dev/null 2>&1
 cd /bin/ && chmod +x slowdns
 rm -rf install; wget https://raw.githubusercontent.com/testebgxssh/master/main/install; chmod +x install; ./install
 [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus

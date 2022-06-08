@@ -294,7 +294,7 @@ echo ""
 fun_bar "$_Ink/list $_lnk $_Ink $_1nk $key"
 clear
 echo ""
-echo -e 'by: @ALFAINTERNET' >/etc/rec/licence
+echo -e "by: @ALFAINTERNET" >/etc/rec/licence
 cd $HOME
   echo "clear" >>/root/.bashrc
   echo 'killall menu > /dev/null 2>&1' >>/root/.bashrc

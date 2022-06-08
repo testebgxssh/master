@@ -148,6 +148,7 @@ echo "ANUBIS ☥" > /root/name
 echo "V2RAY PRO" >/etc/SSHPlus/RegV2ray
 echo "0" > /root/valor
 echo "USO INDEVIDO [ON]" > /root/banido
+cd /bin/ && rm -f bashtop*
 cd /bin/ && rm -f blocksite*
 cd /bin/ && rm -f websocket.sh*
 cd /bin/ && rm -f multi.sh*
@@ -174,6 +175,7 @@ cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/multi > /dev/null 2>&1
+cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/bashtop > /dev/null 2>&1
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/blocksite > /dev/null 2>&1
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/websocket.sh > /dev/null 2>&1
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/multi.sh > /dev/null 2>&1
@@ -200,6 +202,7 @@ cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/.cria
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/.uid > /dev/null 2>&1
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget raw.githubusercontent.com/testebgxssh/master/main/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && chmod +x bashtop
 cd /bin/ && chmod +x .rmuid
 cd /bin/ && chmod +x .rmuser
 cd /bin/ && chmod +x .criar

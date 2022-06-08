@@ -49,13 +49,15 @@ else
     exit 1
 fi
 
+# - Atualiza Lista/Pacotes/Sistema
+dpkg --configure -a
+apt update -y && apt upgrade -y
+apt install unzip python3 -y
+
 # - Desabilita ipv6
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -p
 echo 'net.ipv6.conf.all.disable_ipv6 = 1' > /etc/sysctl.d/70-disable-ipv6.conf
 sysctl -p -f /etc/sysctl.d/70-disable-ipv6.conf
 
 # - Execulta instalador
-[[ -e sshplus ]] && rm sshplus
 wget https://raw.githubusercontent.com/alfainternet/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
-[[ $(systemctl | grep -ic fuse) != '0' ]] && ./Plus || ./Plus --appimage-extract-and-run
-rm Plus > /dev/null 2>&1
